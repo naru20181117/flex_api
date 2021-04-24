@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 import 'CommonUtil.dart';
 
+import 'Page1.dart';
+import 'Page2.dart';
+import 'Page3.dart';
+import 'Page4.dart';
+import 'Page5.dart';
+import 'Page6.dart';
+import 'Page7.dart';
+
 class CommonBase extends StatelessWidget {
   final tabs = [
     KEY_WORDS.Vacation.value,
@@ -24,12 +32,12 @@ class CommonBase extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white, fontSize: 20.0),
           ),
-          backgroundColor: Colors.orangeAccent[700],
+          backgroundColor: Colors.orangeAccent[200],
           bottom: TabBar(
             isScrollable: true,
-            unselectedLabelColor: Colors.white.withOpacity(0.7),
+            unselectedLabelColor: Colors.white.withOpacity(0.9),
             unselectedLabelStyle: TextStyle(fontSize: 15.0),
-            labelColor: Colors.red,
+            labelColor: Colors.black,
             labelStyle: TextStyle(fontSize: 22.0),
             indicatorWeight: 2.0,
             tabs: [
@@ -39,13 +47,13 @@ class CommonBase extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            // Page1(),
-            // Page2(),
-            // Page3(),
-            // Page4(),
-            // Page5(),
-            // Page6(),
-            // Page7()
+            Page1(),
+            Page2(),
+            Page3(),
+            Page4(),
+            Page5(),
+            Page6(),
+            Page7()
           ],
         ),
       ),

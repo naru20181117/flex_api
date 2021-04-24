@@ -3,18 +3,18 @@ import 'CommonList.dart';
 import 'CommonUtil.dart';
 import 'ConnectionBase.dart';
 
-class Page1 extends StatefulWidget {
+class Page2 extends StatefulWidget {
   _MyGetHttpDataState createState() => new _MyGetHttpDataState();
 }
 
-class _MyGetHttpDataState extends State<Page1> {
+class _MyGetHttpDataState extends State<Page2> {
   ConnectionBase _connectionBase = ConnectionBase();
   CommonList _commonList = CommonList();
   List _data;
 
   Future<void> _searchStart() async {
     var jsonData =
-        await _connectionBase.getHttpJSONData(KEY_WORDS.Vacation.value);
+        await _connectionBase.getHttpJSONData(KEY_WORDS.Mountain.value);
 
     setState(() {
       _data = jsonData;
